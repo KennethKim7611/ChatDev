@@ -1,0 +1,1 @@
+Create a program that will intake a documents of firewall policies with will act as knowledge base. The program will also take an excel sheet of current firewall rules of a company. Using the firewall policy provided, it will go through the rules, and flag non-compliance firewall rules with corresponding detailed reasoning as to why

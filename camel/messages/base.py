@@ -27,6 +27,7 @@ from camel.typing import ModelType, RoleType
 try:
     from openai.types.chat.chat_completion_message_tool_call import ChatCompletionMessageToolCall
     from openai.types.chat.chat_completion_message import FunctionCall
+    from openai.types.chat.chat_completion_content_part_refusal_param import ChatCompletionContentPartRefusalParam
 
     openai_new_api = True  # new openai api version
 except ImportError:
@@ -55,6 +56,7 @@ class BaseMessage:
     if openai_new_api:
         function_call: Optional[FunctionCall] = None
         tool_calls: Optional[ChatCompletionMessageToolCall] = None
+        refusal: Optional[ChatCompletionContentPartRefusalParam] = None
 
     def __getattribute__(self, name: str) -> Any:
         r"""Get attribute override to delegate string methods to the

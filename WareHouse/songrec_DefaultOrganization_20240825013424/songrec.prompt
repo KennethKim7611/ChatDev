@@ -1,0 +1,1 @@
+Create a program that will recommend list of songs based on time. For example if the system time is 1AM, it should recommend list of songs that are clam, like R&B; if 2PM, it should recommend list of songs that are energetic, like EDM. The songs list should include current songs, so make sure you are searching live database.
